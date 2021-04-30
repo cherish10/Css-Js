@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //function 
+
+        // function sayHello(){
+        //     alert("안녕하세요");
+        //     document.write("저는 아아아입니다");
+        // }
+
+        // sayHello();
+
+        function nameCard(name,team,num){
+            document.write(`
+                이름 : ${name} <hr>
+                부서명 : ${team}팀 <br>
+                연락처 : ${num} <br>
+            `);
+        }
+
+        nameCard("아아","디자인","010-0000-1111");
+        nameCard("라라","재무","010-0222-1331");
+    </script>
+</body>
+</html>

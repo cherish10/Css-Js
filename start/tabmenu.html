@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+
+        .container{
+            margin: 0 auto;
+            width: 1000px;
+            border: 5px solid#444;
+        }
+
+        ul{display: flex;}
+
+        ul li{
+            width: 20%;
+            line-height: 50px;
+            text-align: center;
+            border-bottom: 5px solid #444;
+            border-right: 5px solid #444;
+            box-sizing: border-box; 
+        }
+
+        ul li.on{
+            background-color: #000;
+            color: #fff;
+        }
+
+        ul li:last-child{border-right: 0;}
+
+        .wrap div{
+            width: 100%;
+            height: 450px;
+            line-height: 450px;
+            text-align: center;
+            font-size: 100px;
+            display: none;
+        }
+
+        .wrap div:nth-child(1){background-color:hotpink; display: block;}
+        .wrap div:nth-child(2){background-color:rosybrown;}
+        .wrap div:nth-child(3){background-color:palevioletred;}
+        .wrap div:nth-child(4){background-color:plum;}
+        .wrap div:nth-child(5){background-color:pink;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="on">MENU1</li>
+            <li>MENU2</li>
+            <li>MENU3</li>
+            <li>MENU4</li>
+            <li>MENU5</li>
+        </ul>
+        <div class="wrap">
+            <div>CONTENT1</div>
+            <div>CONTENT2</div>
+            <div>CONTENT3</div>
+            <div>CONTENT4</div>
+            <div>CONTENT5</div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $("li").on("click",function () {
+            var i = $(this).index();
+
+            $("li").removeClass("on");
+            $("li").eq(i).addClass("on");
+
+            $(".wrap div").eq(i).show().siblings().hide();
+
+        })
+    </script>
+</body>
+</html>

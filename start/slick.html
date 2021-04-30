@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/slick.css">
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .wrap{
+            height: 500px;
+            color: rgba(255,255,255,0.2);
+            text-align: center;
+            line-height: 500px;
+            font-size: 100px;
+            font-family: fantasy;
+
+        }
+
+        .box1{background-color: lightseagreen ;}
+        .box2{background-color: lightblue;}
+        .box3{background-color: lightcoral;}
+        .box4{background-color: lightgreen ;}
+        .box5{background-color: lightgoldenrodyellow;}
+
+        .slick-dats{text-align: center;}
+
+        .slick-dots li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .slick-dots button{
+            border: 0;
+            background-color: #ccc;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-indent: -999999px;
+        }
+
+        .slick-dots .slick-active button{
+            background-color: mediumblue;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">CONTENT1</div>
+        <div class="box2">CONTENT2</div>
+        <div class="box3">CONTENT3</div>
+        <div class="box4">CONTENT4</div>
+        <div class="box5">CONTENT5</div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(".wrap").slick({
+            arrows : true,
+            dots : true,
+            slidesToShow : 3,
+            slidesToScroll : 2,
+            autoplay : true,
+            autoplaySpeed : 1000 
+        });
+    </script>
+</body>
+</html>

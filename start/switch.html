@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            switch
+            표현식을 평가 -> 그 값과 일치하는
+            표현식을 가진 case문으로 실행순서를 이동
+
+            전화번호 뒷자리를 물은 다음,
+            번호가 1111 : 에어팟프로 당첨!
+            번호가 2222 : 맥프로 16인치 당첨!
+            번호가 3333 : 아이폰 12프로 당첨!
+            번호가 4444 : 스타벅스 쿠폰 당첨!
+            그 외 : 꽝 다음기회에...
+        */
+
+        var gift =prompt("번호를 입력하세요");
+
+        // if(gift ===1111){
+        //     alert("에어팟 당첨!");
+        // }else if(gift ===2222){
+        //     alert("맥프로 16인치 당첨!");
+        // }else if(gift ===3333){
+        //     alert("아이폰 12프로 당첨!");
+        // }else if(gift ===4444){
+        //     alert("스타벅스 쿠폰 당첨!");
+        // }else{
+        //     alert("꽝 다음기회에...");
+        // }
+
+    gift = Number(gift);
+
+    var result;
+
+    switch(gift){
+        case 1111 : result = "에어팟프로";
+        break;
+        case 2222 : result = "맥프로 16인치";
+        break;
+        case 3333 : result = "아이폰 12프로";
+        break;
+        case 4444 : result = "스타벅스 쿠폰";
+        break;
+        default : alert("꽝 다음기회에...");
+    }
+
+    if(result){
+        alert(result + "당첨되었습니다. 축하합니다!!")
+    }
+    
+
+
+
+    </script>
+</body>
+</html>

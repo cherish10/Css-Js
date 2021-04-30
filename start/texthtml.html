@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>안녕하세요</div>
+    <section>반갑습니다</section>
+    <p></p>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        //.text(); & .html();
+        /*
+         $(sel).text(); 해당 선택자의 문자노드를 가져옴
+         $(sel).html(); 해당 선택자의 자식노드를 가져옴
+         $(sel).text(txt); 해당 선택자에게 특정 텍스츠를 추가
+         $(sel).html(ele); 해당 선택자에게 특정 요소를 추가
+        */
+
+        var txt = $("div").text();
+        $("p").text(txt);
+
+        var ele = $("section").html();
+        $("p").hrml(`<h1>`(txt) `<h1>`);
+    </script>
+</body>
+</html>
