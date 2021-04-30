@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script>
+		$(function() {
+			var now = 0;
+			var imgs = 4;
+			start();
+			function start(){
+				$(".notice>p").eq(0).css("left","0px");
+				$(".notice>p").eq(1).css("left","300px");
+				$(".notice>p").eq(2).css("left","600px");
+				$(".notice>p").eq(3).css("left","900px");
+				$(".notice>p").eq(4).css("left","1100px");
+				play=setInterval(function(){slide();},2000);
+			}
+			function slide(){
+				now++;
+				if(now==5){
+					now=0;
+				}
+				if(now==1){
+					$(".notice>p").eq(0).css("display","block");
+					$(".notice>p").eq(1).css("display","block");
+					$(".notice>p").eq(2).css("display","none");
+					$(".notice>p").eq(3).css("display","none");
+					$(".notice>p").eq(4).css("display","none");
+					$(".notice>p").eq(1).animate({"left":"0px"});
+					$(".notice>p").eq(2).animate({"left":"300px"});
+					$(".notice>p").eq(3).animate({"left":"600px"});
+					$(".notice>p").eq(4).animate({"left":"900px"});
+					$(".notice>p").eq(0).animate({"left":"-300px"});
+				}else if(now==2){
+					$(".notice>p").eq(1).css("display","block");
+					$(".notice>p").eq(2).css("display","block");
+					$(".notice>p").eq(3).css("display","none");
+					$(".notice>p").eq(4).css("display","none");
+					$(".notice>p").eq(0).css("display","none");
+					$(".notice>p").eq(2).animate({"left":"0px"});
+					$(".notice>p").eq(3).animate({"left":"300px"});
+					$(".notice>p").eq(4).animate({"left":"600px"});
+					$(".notice>p").eq(0).animate({"left":"900px"});
+					$(".notice>p").eq(1).animate({"left":"-300px"});
+				}else if(now==3){
+					$(".notice>p").eq(2).css("display","block");
+					$(".notice>p").eq(3).css("display","block");
+					$(".notice>p").eq(4).css("display","none");
+					$(".notice>p").eq(0).css("display","none");
+					$(".notice>p").eq(1).css("display","none");
+					$(".notice>p").eq(3).animate({"left":"0px"});
+					$(".notice>p").eq(4).animate({"left":"300px"});
+					$(".notice>p").eq(0).animate({"left":"600px"});
+					$(".notice>p").eq(1).animate({"left":"900px"});
+					$(".notice>p").eq(2).animate({"left":"-300px"});
+				}else if(now==4){
+					$(".notice>p").eq(3).css("display","block");
+					$(".notice>p").eq(4).css("display","block");
+					$(".notice>p").eq(0).css("display","none");
+					$(".notice>p").eq(1).css("display","none");
+					$(".notice>p").eq(2).css("display","none");
+					$(".notice>p").eq(4).animate({"left":"0px"});
+					$(".notice>p").eq(0).animate({"left":"300px"});
+					$(".notice>p").eq(1).animate({"left":"600px"});
+					$(".notice>p").eq(2).animate({"left":"900px"});
+					$(".notice>p").eq(3).animate({"left":"-300px"});
+				}else if(now==0){
+					$(".notice>p").eq(4).css("display","block");
+					$(".notice>p").eq(0).css("display","block");
+					$(".notice>p").eq(1).css("display","none");
+					$(".notice>p").eq(2).css("display","none");
+					$(".notice>p").eq(3).css("display","none");
+					$(".notice>p").eq(0).animate({"left":"0px"});
+					$(".notice>p").eq(1).animate({"left":"300px"});
+					$(".notice>p").eq(2).animate({"left":"600px"});
+					$(".notice>p").eq(3).animate({"left":"900px"});
+					$(".notice>p").eq(4).animate({"left":"-300px"});
+				}
+			}
+		});
+	</script>
+	<title></title>
+	<style>
+		*{
+			margin: 0 auto;
+			padding: 0;
+		}
+		#box{
+			width: 300px;
+			height: 45px;
+			border: 2px solid plum;
+			overflow: hidden;
+		}
+		.notice{
+			position: relative;
+		}
+		.notice>p{
+			height: 35px;
+			padding-left: 5px;
+			position: absolute;
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="notice">
+			<p>1.공지</p>
+			<p>2.공지</p>
+			<p>3.공지</p>
+			<p>4.공지</p>
+			<p>5.공지</p>
+		</div>
+	</div>
+</body>
+</html>

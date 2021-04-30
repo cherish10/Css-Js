@@ -1,0 +1,44 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#imgslide{
+	width: 1000px;
+	height: 450px;
+}
+
+.imgs{
+	width: 1000px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+}
+
+.imgs img{
+	width: 100%;
+	position: absolute;
+}
+
+#imgsarray{
+	width: 1000px;
+	height: 300px;
+}
+
+.array{
+	margin-top: 10px;
+	width: 1000px;
+	height: 100px;
+	display: flex;
+}
+
+.array img{
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script>
+		$(function(){
+			$(".content1").css("display","block");
+			$(".tab1").css("background-color","purple");
+			$(".tab1").css("color","#fff");
+
+			$(".tab2").click(function(){
+				$(".content2").siblings().css("display","none");
+				$(".content2").css("display","block");
+				$(".tab2").css("background-color","purple");
+				$(".tab2").css("color","#fff");
+				$(".tab2").siblings().css("background-color","plum");
+				$(".tab2").siblings().css("color","#333");
+			});
+			$(".tab3").click(function(){
+				$(".content3").siblings().css("display","none");
+				$(".content3").css("display","block");
+				$(".tab3").css("background-color","purple");
+				$(".tab3").css("color","#fff");
+				$(".tab3").siblings().css("background-color","plum");
+				$(".tab3").siblings().css("color","#333");
+			});
+			$(".tab4").click(function(){
+				$(".content4").siblings().css("display","none");
+				$(".content4").css("display","block");
+				$(".tab4").css("background-color","purple");
+				$(".tab4").css("color","#fff");
+				$(".tab4").siblings().css("background-color","plum");
+				$(".tab4").siblings().css("color","#333");
+			});
+			$(".tab1").click(function(){
+				$(".content1").siblings().css("display","none");
+				$(".content1").css("display","block");
+				$(".tab1").css("background-color","purple");
+				$(".tab1").css("color","#fff");
+				$(".tab1").siblings().css("background-color","plum");
+				$(".tab1").siblings().css("color","#333");
+			});
+		});
+	</script>
+	<style>
+		.tab{
+			width: 600px;
+			height: 50px;
+		}
+
+		.tab1, .tab2, .tab3, .tab4{
+			width: 150px;
+			height: 50px;
+			float: left;
+			background-color: plum;
+		}
+
+		.content{
+			width: 600px;
+			height: 400px;
+			position: relative;
+		}
+
+		.content1, .content2, .content3, .content4{
+			width: 600px;
+			height: 400px;
+			position: absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="tab">
+		<div class="tab1">첫번째탭</div>
+		<div class="tab2">두번째탭</div>
+		<div class="tab3">세번째탭</div>
+		<div class="tab4">네번째탭</div>
+	</div>
+	<div class="content">
+		<div class="content1">내용1</div>
+		<div class="content2">내용2</div>
+		<div class="content3">내용3</div>
+		<div class="content4">내용4</div>
+	</div>
+</body>
+</html>

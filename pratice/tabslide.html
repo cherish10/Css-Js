@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script>
+		$(function(){
+			var currIndex = 0;
+			var imgLeft;
+			$(".prev").addClass("off");
+
+			$(".next").click(function(){
+				if(currIndex>-3){
+					currIndex--;
+					imgLeft = currIndex*50;
+					$(".imgs").css("margin-left",imgLeft);
+					$(".prev").removeClass("off");
+				}
+				if(currIndex==-3){
+					$(".next").addClass("off");
+				}
+			});
+			$(".prev").click(function(){
+				if(currIndex<0){
+					currIndex++;
+					imgLeft = currIndex*50;
+					$(".imgs").css("margin-left",imgLeft);
+					$(".next").removeClass("off");
+				}
+				if(currIndex==0){
+					$(".prev").addClass("off");
+				}
+			});
+		});
+	</script>
+	<style>
+		#slides{
+			width: 440px;
+			height: 40px;
+			display: flex;
+		}
+		.prev, .next{
+			width: 30px;
+			height: 40px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 3em;
+			cursor: pointer;
+			background-color: #666;
+		}
+		.prev.off, .next.off{
+			opacity: 0.5;
+			cursor: default;
+		}
+		#imgslide{
+			width: 440px;
+			height: 40px;
+			position: relative;
+			overflow: hidden;
+			background-color: #eee;
+		}
+		.imgs{
+			width: 550px;
+			height: 40px;
+			position: absolute;
+		}
+		.imgs img{
+			width: 50px;
+			height: 40px;
+			float: left;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="slides">
+		<div class="prev">&#8249;</div>
+		<div id="imgslide">
+			<div class="imgs">
+				<img src="img/1.png">
+				<img src="img/2.png">
+				<img src="img/3.png">
+				<img src="img/4.png">
+				<img src="img/5.png">
+				<img src="img/6.png">
+				<img src="img/7.png">
+				<img src="img/8.png">
+				<img src="img/9.png">
+				<img src="img/10.png">
+				<img src="img/11.png">
+			</div>
+		</div>
+		<div class="next">&#8250;</div>
+	</div>
+</body>
+</html>
