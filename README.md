@@ -39,6 +39,6 @@ Css&amp;Js
 >http://ghdwn0314.dothome.co.kr/pratice/notice.html   
 >http://ghdwn0314.dothome.co.kr/pratice/notice2.html   
 >http://ghdwn0314.dothome.co.kr/pratice/pratice1.html - 이미지 탭 슬라이드      
->http://ghdwn0314.dothome.co.kr/pratice/tab.html   
->http://ghdwn0314.dothome.co.kr/pratice/tabslide.html
->http://ghdwn0314.dothome.co.kr/pratice/top.html
+>http://ghdwn0314.dothome.co.kr/pratice/tab.html     
+>http://ghdwn0314.dothome.co.kr/pratice/tabslide.html   
+>http://ghdwn0314.dothome.co.kr/pratice/top.html   
