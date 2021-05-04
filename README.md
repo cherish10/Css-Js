@@ -12,7 +12,7 @@ Css&amp;Js
 >http://ghdwn0314.dothome.co.kr/start/event.html   
 >http://ghdwn0314.dothome.co.kr/start/event2.html   
 >http://ghdwn0314.dothome.co.kr/start/event3.html   
->http://ghdwn0314.dothome.co.kr/start/Fadslid.html   
+>http://ghdwn0314.dothome.co.kr/start/Fadeslid.html   
 >http://ghdwn0314.dothome.co.kr/start/for.html   
 >http://ghdwn0314.dothome.co.kr/start/function.html   
 >http://ghdwn0314.dothome.co.kr/start/gallery.html   
