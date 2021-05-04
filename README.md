@@ -20,8 +20,7 @@ Css&amp;Js
 >http://ghdwn0314.dothome.co.kr/start/index.html   
 >http://ghdwn0314.dothome.co.kr/start/js.html  
 >http://ghdwn0314.dothome.co.kr/start/multi.html  
->http://ghdwn0314.dothome.co.kr/start/slick.html   
->http://ghdwn0314.dothome.co.kr/start/start.html   
+>http://ghdwn0314.dothome.co.kr/start/slick.html      
 >http://ghdwn0314.dothome.co.kr/start/switch.html   
 >http://ghdwn0314.dothome.co.kr/start/tabmenu.html   
 >http://ghdwn0314.dothome.co.kr/start/text2.html   
